@@ -1,4 +1,5 @@
-const OPENAI_API_KEY = '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';
+//D0 NOT DEPLOY THE API_KEY//
+const API_KEY = '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';
 const submitButton = document.querySelector('#submit');
 const outputElement = document.querySelector('#output');
 const inputElement = document.querySelector('#input');
@@ -21,7 +22,7 @@ async function getMessage() {
     const options = {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${OPENAI_API_KEY}`,
+            'Authorization': `Bearer ${API_KEY}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
